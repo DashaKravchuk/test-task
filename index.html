@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Lead Advisors</title>
+</head>
+<body>
+<main class="main-block">
+    <div class="blot-container">
+        <img class="blot left-blot" alt="blot" src="images/Vector.png">
+    </div>
+    <div class="text-block">
+        <a href="index.html" class="link">
+            <header class="header-logo">
+                <img alt="Lead Advisors" src="images/logo.svg">
+            </header>
+        </a>
+        <section class="info-block">
+            <h1>Under Construction</h1>
+            <p>We're making lots of improvements and will be back soon</p>
+        </section>
+        <section class="timer-block">
+            <div class="days">
+                <div class="date-block">
+                    <span class="days-timer">00</span>
+                </div>
+                <div class="date-logo">
+                    <img class="large" src="images/days.svg">
+                    <img class="small" src="images/small.svg">
+                    <span class="label-small">DD</span>
+                </div>
+            </div>
+            <span class="semicolon">:</span>
+            <div class="hours">
+                <div class="date-block">
+                    <span class="hours-timer">00</span>
+                </div>
+                <div class="date-logo">
+                    <img class="large" src="images/hours.svg">
+                    <img class="small" src="images/small.svg">
+                    <span class="label-small">HH</span>
+                </div>
+            </div>
+            <span class="semicolon">:</span>
+            <div class="minutes">
+                <div class="date-block">
+                    <span class="minutes-timer">00</span>
+                </div>
+                <div class="date-logo">
+                    <img class="large" src="images/minutes.svg">
+                    <img class="small" src="images/small.svg">
+                    <span class="label-small">MM</span>
+                </div>
+            </div>
+            <span class="semicolon">:</span>
+            <div class="seconds">
+                <div class="date-block">
+                    <span class="seconds-timer">00</span>
+                </div>
+                <div class="date-logo">
+                    <img class="large" src="images/seconds.svg">
+                    <img class="small" src="images/small.svg">
+                    <span class="label-small">SS</span>
+                </div>
+            </div>
+        </section>
+        <section class="button-block">
+            <p class="label">Check our event page when you wait:</p>
+            <a href="https://google.com" class="link">
+                <div class="button">
+                    <span class="button-text">Go to the event</span>
+                    <img src="images/arrow.svg">
+                </div>
+            </a>
+        </section>
+
+    </div>
+    <div class="blot-container">
+        <img class="blot right-blot" alt="blot" src="images/right_blot.png">
+    </div>
+</main>
+<footer class="footer">
+    <form id="form" onsubmit="onFormSubmit(); return false;">
+        <input
+            class="input-form"
+            type="email"
+            placeholder="Enter your Email and get notified"
+            required
+        />
+
+        <input id="submit" type="submit" style="display: none">
+        <div id="submit-button" class="form-submit">
+            <img src="images/arrow.svg">
+        </div>
+    </form>
+</footer>
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <img id="close-button" class="cross close-button" src="images/close.svg">
+        <h2>SUCCESS!</h2>
+        <p>You have successfully subscribed to the email newsletter</p>
+        <div class="button close-button">
+            <span class="button-text">Close</span>
+        </div>
+    </div>
+</div>
+<script src="timer.js"></script>
+<script src="ajaxRequest.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>
